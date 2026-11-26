@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+form {
+  background: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 35px 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+form h2 {
+  margin: 0 0 25px;
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+label {
+  display: block;
+  margin: 15px 0 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.campo-pass {
+  position: relative;
+  width: 100%;
+}
+
+.campo-pass input {
+  width: 100%;
+  padding-right: 44px;
+}
+
+.campo-pass button.ojo {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  margin-top: 0;
+  padding: 4px 6px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.campo-pass button.ojo:hover {
+  transform: translateY(-50%);
+  box-shadow: none;
+  color: #667eea;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+}
+
+.ok,
+.error {
+  margin: 0 0 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.ok {
+  background: #e6f9ee;
+  color: #1a7f45;
+  border: 1px solid #b6ebcb;
+}
+
+.error {
+  background: #fdeaea;
+  color: #c0392b;
+  border: 1px solid #f5c2c0;
+}
+
+.enlace {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.enlace a {
+  color: #667eea;
+  font-weight: 600;
+  text-decoration: none;
+}
